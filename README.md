@@ -3,8 +3,8 @@
 ## Introduction
 Dans cet article, nous allons explorer la création d’un POC (Proof of Concept) pour un système de RAG (Retrieval Augmented Generation) en utilisant [Node.js](https://nodejs.org/), une base de données vectorielle [ChromaDB](https://www.trychroma.com/), et le modèle de langage [Llama3](https://ollama.com/library/llama3) via [Ollama](https://ollama.com/).
 
-### Qu'est-ce qu'un RAG ?
-Un RAG, ou Retrieval Augmented Generation, est une technique qui combine la recherche d'informations pertinentes dans une base de données (retrieval) avec la génération de texte (generation) pour fournir des réponses plus précises et contextuelles. En d'autres termes, un RAG peut récupérer des données spécifiques et utiliser un modèle de langage pour générer une réponse en se basant sur ces données, ce qui le rend particulièrement utile pour des applications nécessitant des réponses détaillées et informées.
+### Qu'est-ce qu'une RAG ?
+Une RAG, ou Retrieval Augmented Generation, est une technique qui combine la recherche d'informations pertinentes dans une base de données (retrieval) avec la génération de texte (generation) pour fournir des réponses plus précises et contextuelles. En d'autres termes, un RAG peut récupérer des données spécifiques et utiliser un modèle de langage pour générer une réponse en se basant sur ces données, ce qui le rend particulièrement utile pour des applications nécessitant des réponses détaillées et informées.
 
 ### Qu'est-ce que ChromaDB et une base de données vectorielle ?
 [ChromaDB](https://www.trychroma.com/) est une base de données vectorielle, un type de base de données spécialement conçu pour stocker et rechercher des vecteurs. Les vecteurs sont des représentations numériques de données (comme des textes ou des images) qui permettent de mesurer la similarité entre ces données. Dans le cas présent, [ChromaDB](https://www.trychroma.com/) est utilisée pour rechercher des phrases similaires à la question posée, ce qui aide à récupérer les informations les plus pertinentes pour générer une réponse précise.
