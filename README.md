@@ -74,7 +74,7 @@ Nous allons maintenant créer un script en Node.js pour interagir avec ChromaDB 
 ``` bash
 $ cd ~/rag-app
 $ npm init
-$ npm install chromadb ollama
+$ npm install chromadb chromadb-default-embed ollama
 $ touch rag.js
 ```
 ## Étape 3 : Initialiser ChromaDB et Ollama (rag.js)
