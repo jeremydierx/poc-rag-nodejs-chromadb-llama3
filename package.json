@@ -1,0 +1,32 @@
+{
+  "name": "poc-rag-nodejs-chromadb-llama3",
+  "version": "1.0.0",
+  "description": "Créer une RAG app en local avec NodeJS, ChromaDB et Llama3 (via Ollama)",
+  "main": "rag.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jeremydierx/poc-rag-nodejs-chromadb-llama3.git"
+  },
+  "keywords": [
+    "rag",
+    "nodejs",
+    "llama3",
+    "chromadb",
+    "ollama",
+    "poc"
+  ],
+  "author": "Jérémy DIERX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremydierx/poc-rag-nodejs-chromadb-llama3/issues"
+  },
+  "homepage": "https://github.com/jeremydierx/poc-rag-nodejs-chromadb-llama3#readme",
+  "dependencies": {
+    "chromadb": "^1.8.1",
+    "chromadb-default-embed": "^2.13.2",
+    "ollama": "^0.5.1"
+  }
+}

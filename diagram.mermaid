@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant User
+    participant Script
+    participant ChromaDB
+    participant Ollama
+
+    User->>Script: Exécute main()
+    Script->>ChromaDB: deleteCollection(collectionName)
+    ChromaDB-->>Script: Confirme suppression
+    Script->>ChromaDB: createCollection(collectionName, embedder)
+    ChromaDB-->>Script: Retourne collection créée
+    Script->>ChromaDB: addToCollection(collection, documents)
+    ChromaDB-->>Script: Confirme ajout
+    Script->>ChromaDB: searchInCollection(collection, question, nResults)
+    ChromaDB-->>Script: Retourne résultats similaires
+    Script->>Ollama: generateResponse(data, model, question)
+    Ollama-->>Script: Retourne réponse générée
+    Script->>User: Affiche réponse
